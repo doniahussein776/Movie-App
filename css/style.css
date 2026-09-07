@@ -1,0 +1,196 @@
+body {
+    background-color: #0c0c0c; 
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Sidebar Styles */
+#sideNav {
+    position: fixed;
+    top: 0;
+    left: -250px; 
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+}
+
+.nav-content {
+    background-color: #000;
+    width: 250px;
+    color: #fff;
+}
+
+.nav-header {
+    width: 60px;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.links a {
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #e65a50;
+}
+
+/* Movie Card Styles */
+.movie-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.movie-poster {
+    width: 100%;
+    display: block;
+}
+
+/* The Overlay Layer (Hover Effect) */
+.movie-layer {
+    position: absolute;
+    top: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(251, 242, 242);
+    padding: 20px;
+    text-align: center;
+    /* Animation settings */
+   top: 100%; 
+    opacity: 0;
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-card:hover .movie-layer {
+    top: 0; 
+    opacity: 1;
+}
+
+.vote-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: 1px solid #28a745;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+/* Inputs styling */
+#search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#searchByWord {
+    border-radius: 50px;
+    width: 100%; 
+    text-align: center;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: white;
+}
+
+#searchByWord::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+}
+
+body {
+    background-color: #121212; 
+    color: #ffffff;            
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.contact-section {
+    padding: 20px;
+    max-width: 900px; 
+    margin: 40px auto; 
+}
+
+/*  "Contact US" */
+.contact-section h1 {
+    font-size: 2em;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #ffffff;
+    display: inline-block; 
+}
+
+
+.input-group {
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+.input-group input {
+    width: 48%;
+    padding: 10px 0; 
+    border: none; 
+    border-bottom: 2px solid #ffffff;
+    background-color: transparent;
+    color: rgba(13,13,13);
+    font-size: 1em;
+    outline: none; 
+    box-sizing: border-box; 
+}
+
+/* (placeholder) */
+.input-group input::placeholder {
+    color: #aaaaaa; 
+}
+
+
+.submit-btn {
+    background-color: #000000; 
+    color: #ffffff; 
+    border: 1px solid #ffffff; 
+    padding: 8px 15px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+
+.submit-btn:hover {
+    background-color: #333333;
+}
+
+
+@media (max-width: 600px) {
+    .input-group {
+        flex-direction: column; 
+    }
+    .input-group input {
+        width: 100%; 
+        margin-bottom: 15px; 
+    }
+}
+
+
+
